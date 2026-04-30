@@ -23,3 +23,8 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'all 0.8s ease-out';
     observer.observe(section);
 });
+
+// 화살표 클릭 시 기술 스택(Skills) 섹션으로 이동
+document.querySelector('.scroll-indicator').addEventListener('click', () => {
+    document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' });
+});
