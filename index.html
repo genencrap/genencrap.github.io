@@ -1,58 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>2023-2-webprograming-jaesung-park</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박재성 | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
     <nav>
-        <div class="navbar">
-            <a id="mainimagenav">홈</a>
-            <a id="pageintronav">페이지소개</a>
-            <a id="calendarnav">달력 상세/편집</a>
-            <a id="schedulenav">일정 상세/편집</a>
-            <a id="aboutnav">고객지원</a>
-            <a id="loginnav">로그인/가입</a>
-        </div>
+        <div class="logo">Jaeseong.Dev</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
     </nav>
-        
-    <section>
-        <header>
-            <div class="main_image">
-            <img id="main_image" src="main_image.png">
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>안녕하세요, <span>박재성</span>입니다.</h1>
+            <p>Cloud & AI에 관심있는 개발자</p>
+            <div class="contact-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <br><br><br>
+        </div>
+    </header>
 
-            <div class="maintextkr">
-            <span id="miantextkr" >여행을 시작하세요</span>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-container">
+            <div class="skill-card">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <p>Go, Python, C++</p>
             </div>
-            <br>
-        </header>
-
-
-        <article>
-            <div class="calendar">
-                <div id="calendar"></div>
-                <script src="calendar.js"></script>
+            <div class="skill-card">
+                <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                <p>AWS, Docker, Kubernetes</p>
             </div>
-        </article>
-
+            <div class="skill-card">
+                <h3><i class="fas fa-brain"></i> AI / ML</h3>
+                <p>PyTorch, Data Preprocessing</p>
+            </div>
+        </div>
     </section>
 
-        <br>
-        <hr>
-        <br><br>
-
-    <section>
-        <header>
-            <button id="mainScheduleboxbutton">자세히</button>
-        </header>
-        <div id="scheduleBox"></div>
-     <!--   <script src="scheduleBox.js"></script>-->
+    <section id="projects">
+        <h2>Featured Project</h2>
+        <div class="project-item">
+            <div class="project-info">
+                <h3>Cloud-Native AI Deployment Platform</h3>
+                <span class="badge">캡스톤 디자인</span>
+                <p>실행 환경에 종속되지 않는 AI 서비스 배포 관리 기술 개발</p>
+                <ul>
+                    <li>Docker 기반 컨테이너화로 배포 효율 극대화</li>
+                    <li>모델 재현성 문제 해결을 위한 환경 통일 설계</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    
-    
 
-    <script src="javascript.js"></script>
-    </body>
+    <footer>
+        <p>&copy; 2026 Park Jaeseong.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
